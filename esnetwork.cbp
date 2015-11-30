@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="esnetwork" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="esnetwork" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="esnetwork" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-U__STRICT_ANSI__" />
+			<Add option="-D_WIN32_WINNT=0x0501" />
+			<Add option="-DESN_WITH_BOOST_LOG" />
+			<Add option="-DESN_WITH_SSL" />
+			<Add directory="../boost/include" />
+			<Add directory="../openssl/include" />
+		</Compiler>
+		<Unit filename="src/Buffer.cpp" />
+		<Unit filename="src/Buffer.h" />
+		<Unit filename="src/BufferManager.cpp" />
+		<Unit filename="src/BufferManager.h" />
+		<Unit filename="src/Business.cpp" />
+		<Unit filename="src/Business.h" />
+		<Unit filename="src/Client.cpp" />
+		<Unit filename="src/Client.h" />
+		<Unit filename="src/ClientSession.cpp" />
+		<Unit filename="src/ClientSession.h" />
+		<Unit filename="src/CommonData.cpp" />
+		<Unit filename="src/CommonData.h" />
+		<Unit filename="src/IoBuffer.cpp" />
+		<Unit filename="src/IoBuffer.h" />
+		<Unit filename="src/IoBufferManager.cpp" />
+		<Unit filename="src/IoBufferManager.h" />
+		<Unit filename="src/IoFilter.cpp" />
+		<Unit filename="src/IoFilter.h" />
+		<Unit filename="src/IoHandler.cpp" />
+		<Unit filename="src/IoHandler.h" />
+		<Unit filename="src/IoService.cpp" />
+		<Unit filename="src/IoService.h" />
+		<Unit filename="src/IoServiceManager.cpp" />
+		<Unit filename="src/IoServiceManager.h" />
+		<Unit filename="src/IoWork.cpp" />
+		<Unit filename="src/IoWork.h" />
+		<Unit filename="src/LogManager.cpp" />
+		<Unit filename="src/LogManager.h" />
+		<Unit filename="src/Logger.cpp" />
+		<Unit filename="src/Logger.h" />
+		<Unit filename="src/MessageCodec.cpp" />
+		<Unit filename="src/MessageCodec.h" />
+		<Unit filename="src/MessageHandler.cpp" />
+		<Unit filename="src/MessageHandler.h" />
+		<Unit filename="src/Server.cpp" />
+		<Unit filename="src/Server.h" />
+		<Unit filename="src/Session.cpp" />
+		<Unit filename="src/Session.h" />
+		<Unit filename="src/SessionManager.cpp" />
+		<Unit filename="src/SessionManager.h" />
+		<Unit filename="src/SharedData.cpp" />
+		<Unit filename="src/SharedData.h" />
+		<Unit filename="src/StringCodec.cpp" />
+		<Unit filename="src/StringCodec.h" />
+		<Unit filename="src/StringHandler.cpp" />
+		<Unit filename="src/StringHandler.h" />
+		<Unit filename="src/Work.cpp" />
+		<Unit filename="src/Work.h" />
+		<Unit filename="src/WorkManager.cpp" />
+		<Unit filename="src/WorkManager.h" />
+		<Unit filename="src/esnetwork.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
